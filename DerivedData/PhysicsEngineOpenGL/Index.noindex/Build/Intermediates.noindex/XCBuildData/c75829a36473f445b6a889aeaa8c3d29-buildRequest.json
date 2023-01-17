@@ -1,0 +1,59 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "04984bba83c321bd6bbb79937aca3e76cce3861c70f4bcb19baf0ea9d2c253e2"
+    }
+  ],
+  "containerPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData/PhysicsEngineOpenGL/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData/PhysicsEngineOpenGL/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData/PhysicsEngineOpenGL/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData/PhysicsEngineOpenGL/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData/PhysicsEngineOpenGL/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/DerivedData/PhysicsEngineOpenGL/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

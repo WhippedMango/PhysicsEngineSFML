@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBA785502976E01400B3C99A /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBA7854F2976E01400B3C99A /* ResourcePath.mm */; };
+		CBA785532976E01400B3C99A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBA785522976E01400B3C99A /* main.cpp */; };
+		CBA785562976E01400B3C99A /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA785552976E01400B3C99A /* cute_image.jpg */; };
+		CBA785582976E01400B3C99A /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = CBA785572976E01400B3C99A /* nice_music.ogg */; };
+		CBA7855A2976E01400B3C99A /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBA785592976E01400B3C99A /* sansation.ttf */; };
+		CBA7855C2976E01400B3C99A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA7855B2976E01400B3C99A /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CBA7854A2976E01400B3C99A /* PhysicsEngineOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsEngineOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA7854E2976E01400B3C99A /* PhysicsEngineOpenGL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PhysicsEngineOpenGL-Info.plist"; path = "../PhysicsEngineOpenGL-Info.plist"; sourceTree = "<group>"; };
+		CBA7854F2976E01400B3C99A /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		CBA785512976E01400B3C99A /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		CBA785522976E01400B3C99A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CBA785552976E01400B3C99A /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
+		CBA785572976E01400B3C99A /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
+		CBA785592976E01400B3C99A /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
+		CBA7855B2976E01400B3C99A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		CBA785622976E68A00B3C99A /* PhysicsEngineOpenGL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PhysicsEngineOpenGL; sourceTree = "<group>"; };
+		CBA785652976EB0F00B3C99A /* PhysicsEngineOpenGL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhysicsEngineOpenGL.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBA785462976E01400B3C99A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBA785402976E01400B3C99A = {
+			isa = PBXGroup;
+			children = (
+				CBA7854C2976E01400B3C99A /* PhysicsEngineOpenGL */,
+				CBA785622976E68A00B3C99A /* PhysicsEngineOpenGL */,
+				CBA7854B2976E01400B3C99A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA7854B2976E01400B3C99A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBA7854A2976E01400B3C99A /* PhysicsEngineOpenGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBA7854C2976E01400B3C99A /* PhysicsEngineOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				CBA785652976EB0F00B3C99A /* PhysicsEngineOpenGL.entitlements */,
+				CBA7854F2976E01400B3C99A /* ResourcePath.mm */,
+				CBA785512976E01400B3C99A /* ResourcePath.hpp */,
+				CBA785522976E01400B3C99A /* main.cpp */,
+				CBA785542976E01400B3C99A /* Resources */,
+				CBA7854D2976E01400B3C99A /* Supporting Files */,
+			);
+			path = PhysicsEngineOpenGL;
+			sourceTree = "<group>";
+		};
+		CBA7854D2976E01400B3C99A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA7854E2976E01400B3C99A /* PhysicsEngineOpenGL-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBA785542976E01400B3C99A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBA785552976E01400B3C99A /* cute_image.jpg */,
+				CBA785572976E01400B3C99A /* nice_music.ogg */,
+				CBA785592976E01400B3C99A /* sansation.ttf */,
+				CBA7855B2976E01400B3C99A /* icon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBA785492976E01400B3C99A /* PhysicsEngineOpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA7855F2976E01400B3C99A /* Build configuration list for PBXNativeTarget "PhysicsEngineOpenGL" */;
+			buildPhases = (
+				CBA785452976E01400B3C99A /* Sources */,
+				CBA785462976E01400B3C99A /* Frameworks */,
+				CBA785472976E01400B3C99A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicsEngineOpenGL;
+			productName = PhysicsEngineOpenGL;
+			productReference = CBA7854A2976E01400B3C99A /* PhysicsEngineOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBA785412976E01400B3C99A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Karl Davies";
+				TargetAttributes = {
+					CBA785492976E01400B3C99A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CBA785442976E01400B3C99A /* Build configuration list for PBXProject "PhysicsEngineOpenGL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBA785402976E01400B3C99A;
+			productRefGroup = CBA7854B2976E01400B3C99A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBA785492976E01400B3C99A /* PhysicsEngineOpenGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBA785472976E01400B3C99A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA7855C2976E01400B3C99A /* icon.png in Resources */,
+				CBA7855A2976E01400B3C99A /* sansation.ttf in Resources */,
+				CBA785582976E01400B3C99A /* nice_music.ogg in Resources */,
+				CBA785562976E01400B3C99A /* cute_image.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBA785452976E01400B3C99A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA785532976E01400B3C99A /* main.cpp in Sources */,
+				CBA785502976E01400B3C99A /* ResourcePath.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CBA7855D2976E01400B3C99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		CBA7855E2976E01400B3C99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		CBA785602976E01400B3C99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = PhysicsEngineOpenGL/PhysicsEngineOpenGL.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCW63DUUWH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhysicsEngineOpenGL/PhysicsEngineOpenGL-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "One-Hole.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBA785612976E01400B3C99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = PhysicsEngineOpenGL/PhysicsEngineOpenGL.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCW63DUUWH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhysicsEngineOpenGL/PhysicsEngineOpenGL-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "One-Hole.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBA785442976E01400B3C99A /* Build configuration list for PBXProject "PhysicsEngineOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA7855D2976E01400B3C99A /* Debug */,
+				CBA7855E2976E01400B3C99A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA7855F2976E01400B3C99A /* Build configuration list for PBXNativeTarget "PhysicsEngineOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA785602976E01400B3C99A /* Debug */,
+				CBA785612976E01400B3C99A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBA785412976E01400B3C99A /* Project object */;
+}
