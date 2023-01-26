@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2B450E29814C9800F221E0 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB2B450C29814C9700F221E0 /* Block.cpp */; };
+		CB73A7E52980648E00552DC7 /* Quadtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB73A7E32980648E00552DC7 /* Quadtree.cpp */; };
+		CB73A7E82980854300552DC7 /* MouseEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */; };
+		CB73A7EE298085BC00552DC7 /* KeyEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */; };
 		CBA785502976E01400B3C99A /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBA7854F2976E01400B3C99A /* ResourcePath.mm */; };
 		CBA785532976E01400B3C99A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBA785522976E01400B3C99A /* main.cpp */; };
 		CBA785562976E01400B3C99A /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBA785552976E01400B3C99A /* cute_image.jpg */; };
 		CBA785582976E01400B3C99A /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = CBA785572976E01400B3C99A /* nice_music.ogg */; };
 		CBA7855A2976E01400B3C99A /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBA785592976E01400B3C99A /* sansation.ttf */; };
 		CBA7855C2976E01400B3C99A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA7855B2976E01400B3C99A /* icon.png */; };
+		CBB274FB29796CDA00CD81A4 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB274F929796CD900CD81A4 /* Object.cpp */; };
+		CBB274FE2979724F00CD81A4 /* SFMLObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB274FC2979724F00CD81A4 /* SFMLObjects.cpp */; };
+		CBB275012979737A00CD81A4 /* PhysicsEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */; };
+		CBB27504297975C900CD81A4 /* PhysicsConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */; };
+		CBB2750729797F5600CD81A4 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB2750529797F5600CD81A4 /* Ball.cpp */; };
+		CBB2750A2979B63300CD81A4 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB275082979B63200CD81A4 /* Engine.cpp */; };
+		CBB275102979BB9500CD81A4 /* ShapeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */; };
+		CBE8C68A2982AC71002365A9 /* RandomPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBE8C6882982AC71002365A9 /* RandomPosition.cpp */; };
+		CBE8C68D2982CC88002365A9 /* Spring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBE8C68B2982CC88002365A9 /* Spring.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB2B450C29814C9700F221E0 /* Block.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		CB2B450D29814C9700F221E0 /* Block.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Block.hpp; sourceTree = "<group>"; };
+		CB73A7E32980648E00552DC7 /* Quadtree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Quadtree.cpp; sourceTree = "<group>"; };
+		CB73A7E42980648E00552DC7 /* Quadtree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quadtree.hpp; sourceTree = "<group>"; };
+		CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MouseEventHandler.cpp; sourceTree = "<group>"; };
+		CB73A7E72980854300552DC7 /* MouseEventHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MouseEventHandler.hpp; sourceTree = "<group>"; };
+		CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KeyEventHandler.cpp; sourceTree = "<group>"; };
+		CB73A7ED298085BC00552DC7 /* KeyEventHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KeyEventHandler.hpp; sourceTree = "<group>"; };
 		CBA7854A2976E01400B3C99A /* PhysicsEngineOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsEngineOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA7854E2976E01400B3C99A /* PhysicsEngineOpenGL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PhysicsEngineOpenGL-Info.plist"; path = "../PhysicsEngineOpenGL-Info.plist"; sourceTree = "<group>"; };
 		CBA7854F2976E01400B3C99A /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -27,6 +48,24 @@
 		CBA7855B2976E01400B3C99A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		CBA785622976E68A00B3C99A /* PhysicsEngineOpenGL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PhysicsEngineOpenGL; sourceTree = "<group>"; };
 		CBA785652976EB0F00B3C99A /* PhysicsEngineOpenGL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhysicsEngineOpenGL.entitlements; sourceTree = "<group>"; };
+		CBB274F929796CD900CD81A4 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		CBB274FA29796CD900CD81A4 /* Object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		CBB274FC2979724F00CD81A4 /* SFMLObjects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SFMLObjects.cpp; sourceTree = "<group>"; };
+		CBB274FD2979724F00CD81A4 /* SFMLObjects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SFMLObjects.hpp; sourceTree = "<group>"; };
+		CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsEngine.cpp; sourceTree = "<group>"; };
+		CBB275002979737A00CD81A4 /* PhysicsEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PhysicsEngine.hpp; sourceTree = "<group>"; };
+		CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsConstants.cpp; sourceTree = "<group>"; };
+		CBB27503297975C900CD81A4 /* PhysicsConstants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PhysicsConstants.hpp; sourceTree = "<group>"; };
+		CBB2750529797F5600CD81A4 /* Ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		CBB2750629797F5600CD81A4 /* Ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ball.hpp; sourceTree = "<group>"; };
+		CBB275082979B63200CD81A4 /* Engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
+		CBB275092979B63200CD81A4 /* Engine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Engine.hpp; sourceTree = "<group>"; };
+		CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeFactory.cpp; sourceTree = "<group>"; };
+		CBB2750F2979BB9500CD81A4 /* ShapeFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShapeFactory.hpp; sourceTree = "<group>"; };
+		CBE8C6882982AC71002365A9 /* RandomPosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RandomPosition.cpp; sourceTree = "<group>"; };
+		CBE8C6892982AC71002365A9 /* RandomPosition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RandomPosition.hpp; sourceTree = "<group>"; };
+		CBE8C68B2982CC88002365A9 /* Spring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spring.cpp; sourceTree = "<group>"; };
+		CBE8C68C2982CC88002365A9 /* Spring.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Spring.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +102,33 @@
 				CBA785652976EB0F00B3C99A /* PhysicsEngineOpenGL.entitlements */,
 				CBA7854F2976E01400B3C99A /* ResourcePath.mm */,
 				CBA785512976E01400B3C99A /* ResourcePath.hpp */,
+				CBB274F929796CD900CD81A4 /* Object.cpp */,
+				CBB274FA29796CD900CD81A4 /* Object.hpp */,
 				CBA785522976E01400B3C99A /* main.cpp */,
+				CBB275082979B63200CD81A4 /* Engine.cpp */,
+				CBB275092979B63200CD81A4 /* Engine.hpp */,
+				CBE8C6882982AC71002365A9 /* RandomPosition.cpp */,
+				CBE8C6892982AC71002365A9 /* RandomPosition.hpp */,
+				CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */,
+				CB73A7E72980854300552DC7 /* MouseEventHandler.hpp */,
+				CB73A7E32980648E00552DC7 /* Quadtree.cpp */,
+				CB73A7E42980648E00552DC7 /* Quadtree.hpp */,
+				CBB2750529797F5600CD81A4 /* Ball.cpp */,
+				CBB2750629797F5600CD81A4 /* Ball.hpp */,
+				CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */,
+				CBB275002979737A00CD81A4 /* PhysicsEngine.hpp */,
+				CBB27503297975C900CD81A4 /* PhysicsConstants.hpp */,
+				CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */,
+				CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */,
+				CB73A7ED298085BC00552DC7 /* KeyEventHandler.hpp */,
+				CB2B450C29814C9700F221E0 /* Block.cpp */,
+				CB2B450D29814C9700F221E0 /* Block.hpp */,
+				CBE8C68B2982CC88002365A9 /* Spring.cpp */,
+				CBE8C68C2982CC88002365A9 /* Spring.hpp */,
+				CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */,
+				CBB2750F2979BB9500CD81A4 /* ShapeFactory.hpp */,
+				CBB274FC2979724F00CD81A4 /* SFMLObjects.cpp */,
+				CBB274FD2979724F00CD81A4 /* SFMLObjects.hpp */,
 				CBA785542976E01400B3C99A /* Resources */,
 				CBA7854D2976E01400B3C99A /* Supporting Files */,
 			);
@@ -161,8 +226,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB73A7E52980648E00552DC7 /* Quadtree.cpp in Sources */,
+				CB2B450E29814C9800F221E0 /* Block.cpp in Sources */,
+				CBB274FE2979724F00CD81A4 /* SFMLObjects.cpp in Sources */,
+				CBE8C68A2982AC71002365A9 /* RandomPosition.cpp in Sources */,
+				CBB2750A2979B63300CD81A4 /* Engine.cpp in Sources */,
 				CBA785532976E01400B3C99A /* main.cpp in Sources */,
 				CBA785502976E01400B3C99A /* ResourcePath.mm in Sources */,
+				CBB275012979737A00CD81A4 /* PhysicsEngine.cpp in Sources */,
+				CBB275102979BB9500CD81A4 /* ShapeFactory.cpp in Sources */,
+				CB73A7E82980854300552DC7 /* MouseEventHandler.cpp in Sources */,
+				CBB274FB29796CDA00CD81A4 /* Object.cpp in Sources */,
+				CB73A7EE298085BC00552DC7 /* KeyEventHandler.cpp in Sources */,
+				CBE8C68D2982CC88002365A9 /* Spring.cpp in Sources */,
+				CBB27504297975C900CD81A4 /* PhysicsConstants.cpp in Sources */,
+				CBB2750729797F5600CD81A4 /* Ball.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

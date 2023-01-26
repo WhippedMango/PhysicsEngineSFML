@@ -1,6 +1,11 @@
 dependencies: \
   /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/main.cpp \
-  /usr/local/include/SFML/Audio.hpp /usr/local/include/SFML/System.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/Engine.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/ResourcePath.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/RandomPosition.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/SFMLObjects.hpp \
+  /usr/local/include/SFML/Graphics.hpp \
+  /usr/local/include/SFML/Window.hpp /usr/local/include/SFML/System.hpp \
   /usr/local/include/SFML/Config.hpp \
   /usr/local/include/SFML/System/Clock.hpp \
   /usr/local/include/SFML/System/Export.hpp \
@@ -26,24 +31,6 @@ dependencies: \
   /usr/local/include/SFML/System/Vector2.inl \
   /usr/local/include/SFML/System/Vector3.hpp \
   /usr/local/include/SFML/System/Vector3.inl \
-  /usr/local/include/SFML/Audio/InputSoundFile.hpp \
-  /usr/local/include/SFML/Audio/Export.hpp \
-  /usr/local/include/SFML/Audio/Listener.hpp \
-  /usr/local/include/SFML/Audio/Music.hpp \
-  /usr/local/include/SFML/Audio/SoundStream.hpp \
-  /usr/local/include/SFML/Audio/SoundSource.hpp \
-  /usr/local/include/SFML/Audio/AlResource.hpp \
-  /usr/local/include/SFML/Audio/OutputSoundFile.hpp \
-  /usr/local/include/SFML/Audio/Sound.hpp \
-  /usr/local/include/SFML/Audio/SoundBuffer.hpp \
-  /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp \
-  /usr/local/include/SFML/Audio/SoundRecorder.hpp \
-  /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
-  /usr/local/include/SFML/Audio/SoundFileFactory.inl \
-  /usr/local/include/SFML/Audio/SoundFileReader.hpp \
-  /usr/local/include/SFML/Audio/SoundFileWriter.hpp \
-  /usr/local/include/SFML/Graphics.hpp \
-  /usr/local/include/SFML/Window.hpp \
   /usr/local/include/SFML/Window/Clipboard.hpp \
   /usr/local/include/SFML/Window/Export.hpp \
   /usr/local/include/SFML/Window/Context.hpp \
@@ -90,4 +77,29 @@ dependencies: \
   /usr/local/include/SFML/Graphics/Sprite.hpp \
   /usr/local/include/SFML/Graphics/Text.hpp \
   /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/ResourcePath.hpp
+  /usr/local/include/SFML/Audio.hpp \
+  /usr/local/include/SFML/Audio/InputSoundFile.hpp \
+  /usr/local/include/SFML/Audio/Export.hpp \
+  /usr/local/include/SFML/Audio/Listener.hpp \
+  /usr/local/include/SFML/Audio/Music.hpp \
+  /usr/local/include/SFML/Audio/SoundStream.hpp \
+  /usr/local/include/SFML/Audio/SoundSource.hpp \
+  /usr/local/include/SFML/Audio/AlResource.hpp \
+  /usr/local/include/SFML/Audio/OutputSoundFile.hpp \
+  /usr/local/include/SFML/Audio/Sound.hpp \
+  /usr/local/include/SFML/Audio/SoundBuffer.hpp \
+  /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /usr/local/include/SFML/Audio/SoundRecorder.hpp \
+  /usr/local/include/SFML/Audio/SoundFileFactory.hpp \
+  /usr/local/include/SFML/Audio/SoundFileFactory.inl \
+  /usr/local/include/SFML/Audio/SoundFileReader.hpp \
+  /usr/local/include/SFML/Audio/SoundFileWriter.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/PhysicsEngine.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/Object.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/PhysicsConstants.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/Ball.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/Block.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/ShapeFactory.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/Quadtree.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/KeyEventHandler.hpp \
+  /Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/MouseEventHandler.hpp
