@@ -5,5 +5,5 @@
 ////////////////////////////////////////////////////////////
 std::string resourcePath(void)
 {
-    return "/Users/charlie/Desktop/Xcode/PhysicsEngineOpenGL/PhysicsEngineOpenGL/";
+    return "/Users/charlie/Downloads";
 }

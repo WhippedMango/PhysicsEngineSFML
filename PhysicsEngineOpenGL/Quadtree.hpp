@@ -107,7 +107,7 @@ public:
         }
         return foundObjects;
     }
-
+    
     // Clear the quadtree
     void clear() {
         objects.clear();

@@ -102,33 +102,33 @@
 				CBA785652976EB0F00B3C99A /* PhysicsEngineOpenGL.entitlements */,
 				CBA7854F2976E01400B3C99A /* ResourcePath.mm */,
 				CBA785512976E01400B3C99A /* ResourcePath.hpp */,
-				CBB274F929796CD900CD81A4 /* Object.cpp */,
-				CBB274FA29796CD900CD81A4 /* Object.hpp */,
-				CBA785522976E01400B3C99A /* main.cpp */,
-				CBB275082979B63200CD81A4 /* Engine.cpp */,
-				CBB275092979B63200CD81A4 /* Engine.hpp */,
-				CBE8C6882982AC71002365A9 /* RandomPosition.cpp */,
-				CBE8C6892982AC71002365A9 /* RandomPosition.hpp */,
-				CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */,
-				CB73A7E72980854300552DC7 /* MouseEventHandler.hpp */,
-				CB73A7E32980648E00552DC7 /* Quadtree.cpp */,
-				CB73A7E42980648E00552DC7 /* Quadtree.hpp */,
-				CBB2750529797F5600CD81A4 /* Ball.cpp */,
-				CBB2750629797F5600CD81A4 /* Ball.hpp */,
-				CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */,
-				CBB275002979737A00CD81A4 /* PhysicsEngine.hpp */,
-				CBB27503297975C900CD81A4 /* PhysicsConstants.hpp */,
-				CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */,
-				CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */,
-				CB73A7ED298085BC00552DC7 /* KeyEventHandler.hpp */,
-				CB2B450C29814C9700F221E0 /* Block.cpp */,
-				CB2B450D29814C9700F221E0 /* Block.hpp */,
-				CBE8C68B2982CC88002365A9 /* Spring.cpp */,
-				CBE8C68C2982CC88002365A9 /* Spring.hpp */,
 				CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */,
 				CBB2750F2979BB9500CD81A4 /* ShapeFactory.hpp */,
 				CBB274FC2979724F00CD81A4 /* SFMLObjects.cpp */,
 				CBB274FD2979724F00CD81A4 /* SFMLObjects.hpp */,
+				CBB274F929796CD900CD81A4 /* Object.cpp */,
+				CBB274FA29796CD900CD81A4 /* Object.hpp */,
+				CB2B450C29814C9700F221E0 /* Block.cpp */,
+				CB2B450D29814C9700F221E0 /* Block.hpp */,
+				CBB2750529797F5600CD81A4 /* Ball.cpp */,
+				CBB2750629797F5600CD81A4 /* Ball.hpp */,
+				CBE8C68B2982CC88002365A9 /* Spring.cpp */,
+				CBE8C68C2982CC88002365A9 /* Spring.hpp */,
+				CBA785522976E01400B3C99A /* main.cpp */,
+				CBB275082979B63200CD81A4 /* Engine.cpp */,
+				CBB275092979B63200CD81A4 /* Engine.hpp */,
+				CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */,
+				CB73A7E72980854300552DC7 /* MouseEventHandler.hpp */,
+				CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */,
+				CBB275002979737A00CD81A4 /* PhysicsEngine.hpp */,
+				CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */,
+				CB73A7ED298085BC00552DC7 /* KeyEventHandler.hpp */,
+				CBB27503297975C900CD81A4 /* PhysicsConstants.hpp */,
+				CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */,
+				CB73A7E32980648E00552DC7 /* Quadtree.cpp */,
+				CB73A7E42980648E00552DC7 /* Quadtree.hpp */,
+				CBE8C6882982AC71002365A9 /* RandomPosition.cpp */,
+				CBE8C6892982AC71002365A9 /* RandomPosition.hpp */,
 				CBA785542976E01400B3C99A /* Resources */,
 				CBA7854D2976E01400B3C99A /* Supporting Files */,
 			);
@@ -339,7 +339,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_ENTITLEMENTS = PhysicsEngineOpenGL/PhysicsEngineOpenGL.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: karldaviesmail@gmail.com (9L9Q2R6NF8)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCW63DUUWH;
@@ -356,6 +358,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "One-Hole.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -364,6 +367,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = PhysicsEngineOpenGL/PhysicsEngineOpenGL.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: karldaviesmail@gmail.com (9L9Q2R6NF8)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCW63DUUWH;
@@ -380,6 +384,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "One-Hole.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
