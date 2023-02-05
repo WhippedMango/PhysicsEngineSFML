@@ -9,8 +9,8 @@
 #ifndef Quadtree_hpp
 #define Quadtree_hpp
 
-#include "Quadtree.hpp"
-#include "Engine.hpp"
+#include "SFMLObjects.hpp"
+#include "Object.hpp"
 #include <vector>
 #include <stdio.h>
 

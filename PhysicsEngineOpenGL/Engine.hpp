@@ -26,10 +26,8 @@ private:
     Quadtree* quadtree;
     int maxObjects;
     float bounce = 50; // Height of bounce
-    sf::Vector2f startPos;
-    sf::Vector2f currentPos;
-    float mouseDragDistance = 0;
-    bool isDragging = false;
+    MouseHandler mouseHandler;
+    KeyHandler keyHandler;
     sf::Texture texture;
     sf::Sprite sprite;
 
@@ -57,8 +55,6 @@ public:
     }
     
     void run(sf::RenderWindow &window) {
-
-        
         // Initialise KE value for debug
         float ke = 0;
         
@@ -70,68 +66,12 @@ public:
                 if (event.type == sf::Event::Closed) {
                     window.close();
                 }
-                else if (event.type == sf::Event::KeyPressed) {
-                    if (event.key.code == sf::Keyboard::Space || event.key.code == sf::Keyboard::Enter) {
-                        std::cout << "key press detected" << std::endl;  // Debug print statement
-                        if (balls.size() < balls.capacity()) {
-                            quadtree->insert(&balls.back());
-                            sf::Vector2f randomPosition = getRandomPosition(window);
-                            float new_x = randomPosition.x;
-                            float new_y = randomPosition.y;
-                            float new_vx = rand() % 20 - 10;
-                            float new_vy = rand() % 20 - 10;
-                            Ball new_ball(new_x, new_y, new_vx, new_vy, ax, ay, mass, radius, omega, inertia, physics);
-                            // Use the Quadtree to determine if a shape will randomly spawn on another shape and if so, move it
-                            for (int i = 0; i < balls.size(); i++) {
-                                std::vector<Object*> nearbyObjects = quadtree->retrieve(balls[i].getGlobalBounds());
-                                for (int j = i + 1; j < nearbyObjects.size(); j++) {
-                                    balls[i].ballHere(balls[j], new_ball, window);
-                                }
-                            }
-                            balls.push_back(new_ball);
-                            shapes.push_back(ShapeFactory::createCircleShape(1, radius, sf::Vector2f(new_x, new_y))[0]);
-                        }
-                    }
-                }
-                else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Right) {
-                    sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-                    startPos = sf::Vector2f(event.mouseButton.x, event.mouseButton.y);
-                    isDragging = true;
-                }
-                else if (event.type == sf::Event::MouseButtonReleased) {
-                    if (event.mouseButton.button == sf::Mouse::Right) {
-                        isDragging = false;
-                    }
-                }
-                else if (event.type == sf::Event::MouseMoved && isDragging) {
-                    sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-                    currentPos = sf::Vector2f(event.mouseMove.x, event.mouseMove.y);
-                    mouseDragDistance = sqrt(pow(currentPos.x - startPos.x, 2) + pow(currentPos.y - startPos.y, 2));
-                    std::cout << "Mouse Drag Distance: " << mouseDragDistance << std::endl;
-                    for (int i = 0; i < balls.size(); i++) {
-                        if (shapes[i].getGlobalBounds().contains(mousePos.x, mousePos.y)) {
-                            for (int j = i; j < balls.size(); j++){
-                                if (!physics.checkCollision(balls[i], balls[j]) || !physics.checkCollision(balls[i], balls[0])){
-                                    balls[i].spring(150, mouseDragDistance, currentPos, startPos);
-                                }
-                            }
-                        }
-                    }
-                }
-                else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                    isDragging = false;
-                    sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-                    for (int i = 0; i < balls.size(); i++) {
-                        if (shapes[i].getGlobalBounds().contains(mousePos.x, mousePos.y)) {
-                            balls[i].bounce(0.9, bounce);
-                        }
-                    }
-                }
+                keyHandler.handleKeyEvent(event, balls, shapes, quadtree, window, physics);
+                mouseHandler.handleMouseEvent(event, balls, shapes, window, bounce);
             }
             
             // Clear the previous frame
             window.clear();
-            
             
             for (int i = 0; i < balls.size(); i++) {
                 // Add the kinetic energy
@@ -146,9 +86,8 @@ public:
                     if (physics.checkCollision(balls[i], balls[j])) {
                         physics.handleCollision(balls[i], balls[j], 0.9);
                     }
-                    
-                    
                 }
+                
                 shapes[i].setPosition(balls[i].x - balls[i].radius/2, balls[i].y - balls[i].radius/2);
                 sprite.setPosition(balls[i].x- balls[i].radius, balls[i].y- balls[i].radius);
                 window.draw(shapes[i]);

@@ -8,4 +8,3 @@
 
 #include "KeyEventHandler.hpp"
 
-void handleKeyPressed(sf::Event event, std::vector<Ball>& balls, std::vector<sf::CircleShape>& shapes, Quadtree* quadtree, sf::RenderWindow &window, PhysicsEngine physics);
