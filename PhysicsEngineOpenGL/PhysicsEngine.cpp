@@ -56,6 +56,11 @@ void PhysicsEngine::spring(Object &object, float springConstant, float mouseDrag
     float displacement = magnitude - mouseDragDistance;
     sf::Vector2f springForce = -springConstant * displacement * springDirection;
     
+    float dt = 1.0f / 60.0f;
+    object.vx += object.ax * dt;
+    object.vy += object.ay * dt;
+    object.x += object.vx * dt + 0.5 * object.ax * dt * dt;
+    object.y += object.vy * dt + 0.5 * object.ay * dt * dt;
     object.ax = -springForce.x / object.mass;
     object.ay = -springForce.y / object.mass;
 }

@@ -112,7 +112,7 @@ public:
                         if (shapes[i].getGlobalBounds().contains(mousePos.x, mousePos.y)) {
                             for (int j = i; j < balls.size(); j++){
                                 if (!physics.checkCollision(balls[i], balls[j]) || !physics.checkCollision(balls[i], balls[0])){
-                                    balls[i].spring(15, mouseDragDistance, currentPos, startPos);
+                                    balls[i].spring(150, mouseDragDistance, currentPos, startPos);
                                 }
                             }
                         }
@@ -144,7 +144,7 @@ public:
                 // Check for collision between balls and handle
                 for (int j = i + 1; j < balls.size(); j++) {
                     if (physics.checkCollision(balls[i], balls[j])) {
-                        physics.handleCollision(balls[i], balls[j], 0.8);
+                        physics.handleCollision(balls[i], balls[j], 0.9);
                     }
                     
                     
