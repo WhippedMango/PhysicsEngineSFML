@@ -144,8 +144,10 @@ public:
                 // Check for collision between balls and handle
                 for (int j = i + 1; j < balls.size(); j++) {
                     if (physics.checkCollision(balls[i], balls[j])) {
-                        physics.handleCollision(balls[i], balls[j], 0.9);
+                        physics.handleCollision(balls[i], balls[j], 0.8);
                     }
+                    
+                    
                 }
                 shapes[i].setPosition(balls[i].x - balls[i].radius/2, balls[i].y - balls[i].radius/2);
                 sprite.setPosition(balls[i].x- balls[i].radius, balls[i].y- balls[i].radius);
