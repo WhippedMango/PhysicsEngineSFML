@@ -1,11 +1,3 @@
-//
-//  PhysicsEngine.hpp
-//  PhysicsEngineOpenGL
-//
-//  Created by Karl Davies on 19/01/2023.
-//  Copyright © 2023 Karl Davies. All rights reserved.
-//
-
 #ifndef PHYSICSENGINE_HPP
 #define PHYSICSENGINE_HPP
 #include "Object.hpp"

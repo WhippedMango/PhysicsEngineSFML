@@ -1,11 +1,3 @@
-//
-//  Block.hpp
-//  PhysicsEngineOpenGL
-//
-//  Created by Karl Davies on 25/01/2023.
-//  Copyright © 2023 Karl Davies. All rights reserved.
-//
-
 #ifndef Block_hpp
 #define Block_hpp
 
@@ -72,13 +64,3 @@ private:
 };
 
 #endif /* Block_hpp */
-
-
-//    std::vector<sf::Vector2f> getNormals() override {
-//        return {
-//            sf::Vector2f(1.0f, 0.0f),
-//            sf::Vector2f(0.0f, 1.0f),
-//            sf::Vector2f(-1.0f, 0.0f),
-//            sf::Vector2f(0.0f, -1.0f)
-//        };
-//    }

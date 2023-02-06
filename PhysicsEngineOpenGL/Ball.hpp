@@ -1,11 +1,3 @@
-//
-//  Ball.hpp
-//  PhysicsEngineOpenGL
-//
-//  Created by Karl Davies on 19/01/2023.
-//  Copyright © 2023 Karl Davies. All rights reserved.
-//
-
 #ifndef BALL_HPP
 #define BALL_HPP
 
@@ -84,10 +76,3 @@ private:
 };
 
 #endif /* Ball_hpp */
-
-//        void spawnBall(float x, float y, float vx, float vy, float ax, float ay, float mass, float radius, PhysicsEngine &physicsEngine) {
-//            sf::CircleShape circle(radius);
-//            circle.setPosition(x, y);
-//            circle.setFillColor(sf::Color::Blue);
-//            balls.push_back(circle);
-//        }

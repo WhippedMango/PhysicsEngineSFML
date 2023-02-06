@@ -1,11 +1,3 @@
-//
-//  PhysicsConstants.cpp
-//  PhysicsEngineOpenGL
-//
-//  Created by Karl Davies on 19/01/2023.
-//  Copyright © 2023 Karl Davies. All rights reserved.
-//
-
 #include "PhysicsConstants.hpp"
 #include <vector>
 
@@ -15,7 +7,7 @@ const float ax = 0;
 const float ay = 0;
 const float vx = rand() % 1 - 1; // Random velocity between -10 and 10
 const float vy = rand() % 1 - 1;
-const float mass = 0.9f; // 1 kg
+const float mass = 0.9f;
 const float radius = 101.1;
 const float omega = 0;
 const float inertia = 0;

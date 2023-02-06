@@ -1,11 +1,3 @@
-//
-//  ShapeFactory.hpp
-//  PhysicsEngineOpenGL
-//
-//  Created by Karl Davies on 19/01/2023.
-//  Copyright © 2023 Karl Davies. All rights reserved.
-//
-
 #ifndef ShapeFactory_hpp
 #define ShapeFactory_hpp
 
@@ -50,14 +42,3 @@ public:
 };
 
 #endif /* ShapeFactory_hpp */
-
-
-//class ShapeFactory {
-//public:
-//    static sf::CircleShape createCircleShape(float x, float y, float radius, sf::Color color) {
-//        sf::CircleShape shape(radius);
-//        shape.setFillColor(color);
-//        shape.setPosition(x, y);
-//        return shape;
-//    }
-//};

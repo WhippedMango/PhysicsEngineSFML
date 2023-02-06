@@ -1,11 +1,3 @@
-//
-//  MouseEventHandler.hpp
-//  PhysicsEngineOpenGL
-//
-//  Created by Karl Davies on 24/01/2023.
-//  Copyright © 2023 Karl Davies. All rights reserved.
-//
-
 #ifndef MOUSEEVENTHANDLER_HPP
 #define MOUSEEVENTHANDLER_HPP
 
