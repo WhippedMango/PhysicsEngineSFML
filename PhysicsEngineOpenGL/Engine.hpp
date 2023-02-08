@@ -6,7 +6,6 @@
 #include "PhysicsEngine.hpp"
 #include "PhysicsConstants.hpp"
 #include "Ball.hpp"
-#include "Block.hpp"
 #include "ShapeFactory.hpp"
 #include "Quadtree.hpp"
 #include "KeyEventHandler.hpp"
@@ -52,7 +51,6 @@ public:
         float ke = 0;
         
         while (window.isOpen()) {
-            sf::Clock clock;
             // Handle events
             sf::Event event;
             while (window.pollEvent(event)) {
