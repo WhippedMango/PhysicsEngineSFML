@@ -10,7 +10,6 @@
 #include "Quadtree.hpp"
 #include "KeyEventHandler.hpp"
 #include "MouseEventHandler.hpp"
-#include "Spring.hpp"
 
 
 #include <iostream>
