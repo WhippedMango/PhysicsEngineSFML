@@ -20,7 +20,6 @@
 		CBB2750A2979B63300CD81A4 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB275082979B63200CD81A4 /* Engine.cpp */; };
 		CBB275102979BB9500CD81A4 /* ShapeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */; };
 		CBE8C68A2982AC71002365A9 /* RandomPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBE8C6882982AC71002365A9 /* RandomPosition.cpp */; };
-		CBE8C68D2982CC88002365A9 /* Spring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBE8C68B2982CC88002365A9 /* Spring.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +52,6 @@
 		CBB2750F2979BB9500CD81A4 /* ShapeFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShapeFactory.hpp; sourceTree = "<group>"; };
 		CBE8C6882982AC71002365A9 /* RandomPosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RandomPosition.cpp; sourceTree = "<group>"; };
 		CBE8C6892982AC71002365A9 /* RandomPosition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RandomPosition.hpp; sourceTree = "<group>"; };
-		CBE8C68B2982CC88002365A9 /* Spring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spring.cpp; sourceTree = "<group>"; };
-		CBE8C68C2982CC88002365A9 /* Spring.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Spring.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +96,6 @@
 				CB2B450D29814C9700F221E0 /* Block.hpp */,
 				CBB2750529797F5600CD81A4 /* Ball.cpp */,
 				CBB2750629797F5600CD81A4 /* Ball.hpp */,
-				CBE8C68B2982CC88002365A9 /* Spring.cpp */,
-				CBE8C68C2982CC88002365A9 /* Spring.hpp */,
 				CBA785522976E01400B3C99A /* main.cpp */,
 				CBB275082979B63200CD81A4 /* Engine.cpp */,
 				CBB275092979B63200CD81A4 /* Engine.hpp */,
@@ -208,7 +203,6 @@
 				CB73A7E82980854300552DC7 /* MouseEventHandler.cpp in Sources */,
 				CBB274FB29796CDA00CD81A4 /* Object.cpp in Sources */,
 				CB73A7EE298085BC00552DC7 /* KeyEventHandler.cpp in Sources */,
-				CBE8C68D2982CC88002365A9 /* Spring.cpp in Sources */,
 				CBB27504297975C900CD81A4 /* PhysicsConstants.cpp in Sources */,
 				CBB2750729797F5600CD81A4 /* Ball.cpp in Sources */,
 			);
