@@ -85,32 +85,9 @@
 		CBA7854C2976E01400B3C99A /* PhysicsEngineOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				CBBDAA1F2A8D609300C3456F /* Source */,
+				CBBDAA1E2A8D606000C3456F /* Headers */,
 				CBA785652976EB0F00B3C99A /* PhysicsEngineOpenGL.entitlements */,
-				CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */,
-				CBB2750F2979BB9500CD81A4 /* ShapeFactory.hpp */,
-				CBB274FC2979724F00CD81A4 /* SFMLObjects.cpp */,
-				CBB274FD2979724F00CD81A4 /* SFMLObjects.hpp */,
-				CBB274F929796CD900CD81A4 /* Object.cpp */,
-				CBB274FA29796CD900CD81A4 /* Object.hpp */,
-				CB2B450C29814C9700F221E0 /* Block.cpp */,
-				CB2B450D29814C9700F221E0 /* Block.hpp */,
-				CBB2750529797F5600CD81A4 /* Ball.cpp */,
-				CBB2750629797F5600CD81A4 /* Ball.hpp */,
-				CBA785522976E01400B3C99A /* main.cpp */,
-				CBB275082979B63200CD81A4 /* Engine.cpp */,
-				CBB275092979B63200CD81A4 /* Engine.hpp */,
-				CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */,
-				CB73A7E72980854300552DC7 /* MouseEventHandler.hpp */,
-				CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */,
-				CBB275002979737A00CD81A4 /* PhysicsEngine.hpp */,
-				CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */,
-				CB73A7ED298085BC00552DC7 /* KeyEventHandler.hpp */,
-				CBB27503297975C900CD81A4 /* PhysicsConstants.hpp */,
-				CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */,
-				CB73A7E32980648E00552DC7 /* Quadtree.cpp */,
-				CB73A7E42980648E00552DC7 /* Quadtree.hpp */,
-				CBE8C6882982AC71002365A9 /* RandomPosition.cpp */,
-				CBE8C6892982AC71002365A9 /* RandomPosition.hpp */,
 				CBA7854D2976E01400B3C99A /* Supporting Files */,
 			);
 			path = PhysicsEngineOpenGL;
@@ -122,6 +99,45 @@
 				CBA7854E2976E01400B3C99A /* PhysicsEngineOpenGL-Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBBDAA1E2A8D606000C3456F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2750F2979BB9500CD81A4 /* ShapeFactory.hpp */,
+				CBB274FD2979724F00CD81A4 /* SFMLObjects.hpp */,
+				CBB274FA29796CD900CD81A4 /* Object.hpp */,
+				CB2B450D29814C9700F221E0 /* Block.hpp */,
+				CBB2750629797F5600CD81A4 /* Ball.hpp */,
+				CBA785522976E01400B3C99A /* main.cpp */,
+				CBB275092979B63200CD81A4 /* Engine.hpp */,
+				CB73A7E72980854300552DC7 /* MouseEventHandler.hpp */,
+				CBB275002979737A00CD81A4 /* PhysicsEngine.hpp */,
+				CB73A7ED298085BC00552DC7 /* KeyEventHandler.hpp */,
+				CBB27502297975C900CD81A4 /* PhysicsConstants.cpp */,
+				CB73A7E42980648E00552DC7 /* Quadtree.hpp */,
+				CBE8C6892982AC71002365A9 /* RandomPosition.hpp */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CBBDAA1F2A8D609300C3456F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2750E2979BB9500CD81A4 /* ShapeFactory.cpp */,
+				CBB274FC2979724F00CD81A4 /* SFMLObjects.cpp */,
+				CBB274F929796CD900CD81A4 /* Object.cpp */,
+				CB2B450C29814C9700F221E0 /* Block.cpp */,
+				CBB2750529797F5600CD81A4 /* Ball.cpp */,
+				CBB275082979B63200CD81A4 /* Engine.cpp */,
+				CB73A7E62980854300552DC7 /* MouseEventHandler.cpp */,
+				CBB274FF2979737A00CD81A4 /* PhysicsEngine.cpp */,
+				CB73A7EC298085BC00552DC7 /* KeyEventHandler.cpp */,
+				CBB27503297975C900CD81A4 /* PhysicsConstants.hpp */,
+				CB73A7E32980648E00552DC7 /* Quadtree.cpp */,
+				CBE8C6882982AC71002365A9 /* RandomPosition.cpp */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +334,7 @@
 				INFOPLIST_FILE = "PhysicsEngineOpenGL/PhysicsEngineOpenGL-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "One-Hole.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,7 +360,7 @@
 				INFOPLIST_FILE = "PhysicsEngineOpenGL/PhysicsEngineOpenGL-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "One-Hole.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

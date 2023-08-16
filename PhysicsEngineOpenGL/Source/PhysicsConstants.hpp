@@ -1,5 +1,6 @@
 #ifndef PHYSICSCONSTANTS_HPP
 #define PHYSICSCONSTANTS_HPP
+
 extern const float GRAVITY;
 extern const float TIMESTEP;
 extern const float ax;

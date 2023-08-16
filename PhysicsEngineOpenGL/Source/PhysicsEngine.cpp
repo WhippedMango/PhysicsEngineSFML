@@ -40,22 +40,28 @@ void PhysicsEngine::spring(Object &object, float springConstant, float mouseDrag
     object.y = currentPos.y;
     sf::Vector2f springDirection = sf::Vector2f(currentPos.x - startPos.x, currentPos.y - startPos.y);
     float magnitude = sqrt(springDirection.x * springDirection.x + springDirection.y * springDirection.y);
-    if (magnitude <= 0){
+    if (magnitude <= 0) {
         return;
     }
     springDirection.x /= magnitude;
     springDirection.y /= magnitude;
     float displacement = magnitude - mouseDragDistance;
     sf::Vector2f springForce = -springConstant * displacement * springDirection;
-    
+
+    // Update acceleration based on spring force
+    object.ax = springForce.x / object.mass;
+    object.ay = springForce.y / object.mass;
+
+    // Update velocity based on acceleration
     float dt = 1.0f / 60.0f;
     object.vx += object.ax * dt;
     object.vy += object.ay * dt;
+
+    // Update position based on velocity
     object.x += object.vx * dt + 0.5 * object.ax * dt * dt;
     object.y += object.vy * dt + 0.5 * object.ay * dt * dt;
-    object.ax = -springForce.x / object.mass;
-    object.ay = -springForce.y / object.mass;
 }
+
 
 bool PhysicsEngine::checkCollision(Object &object1, Object &object2) {
     if (object1.shape == "circle" && object2.shape == "circle") {
@@ -77,54 +83,62 @@ bool PhysicsEngine::checkCollision(Object &object1, Object &object2) {
     }
 }
 
-void PhysicsEngine::handleCollision(Object &object1, Object &object2, float COR) {
-    // Get the normal vector between the objects
-    float normx = object2.x  - object1.x;
-    float normy = object2.y - object1.y;
-    float new_mag = sqrt(normx*normx + normy*normy);
-    float damp = 0.7;
-    normx /= new_mag;
-    normy /= new_mag;
+void PhysicsEngine::handleCollision(Object& object1, Object& object2, float COR) {
+    // Calculate relative velocity
     
-    float relNormalVel = (object1.vx - object2.vx) * normx + (object1.vy - object2.vy) * normy;
+    float damp = 0.8f;
+
+    sf::Vector2f relVelocity = sf::Vector2f(object2.vx - object1.vx, object2.vy - object1.vy);
     
-    // Get the tangent vector
-    float tanx = -normy;
-    float tany = normx;
+    // Calculate the normal vector
+    sf::Vector2f normal = sf::Vector2f(object2.x - object1.x, object2.y - object1.y);
+    float distance = sqrt(normal.x * normal.x + normal.y * normal.y);
+    normal /= distance; // Normalize
     
-    if (relNormalVel > 0) {
-        // Calculate the new velocity based on conservation of momentum
-        float mass1 = object1.mass;
-        float mass2 = object2.mass;
-        float total_mass = mass1 + mass2;
-        float impulse = 2 * mass2 * relNormalVel / total_mass * COR;
-        object1.vx -= impulse * normx / mass1;
-        object1.vy -= impulse * normy / mass1;
-        object2.vx += impulse * normx / mass2;
-        object2.vy += impulse * normy / mass2;
-        
-        float dist = object2.radius + object1.radius - new_mag;
-        object1.x -= normx * dist / 2;
-        object1.y -= normy * dist / 2;
-        object2.x += normx * dist / 2;
-        object2.y += normy * dist / 2;
+    // Calculate the impulse
+    float impulseMagnitude = -COR * (1 + damp) * (relVelocity.x * normal.x + relVelocity.y * normal.y) /
+                             (1 / object1.mass + 1 / object2.mass);
+    
+    // Apply the impulse to the velocities, taking into account damping
+    object1.vx -= impulseMagnitude * normal.x / object1.mass;
+    object1.vy -= impulseMagnitude * normal.y / object1.mass;
+    object2.vx += impulseMagnitude * normal.x / object2.mass;
+    object2.vy += impulseMagnitude * normal.y / object2.mass;
+    
+    // Apply damping to the velocities
+    float dampingFactor = 0.95; // Adjust this value as needed
+    object1.vx *= dampingFactor;
+    object1.vy *= dampingFactor;
+    object2.vx *= dampingFactor;
+    object2.vy *= dampingFactor;
+    
+    // Separate the objects to avoid overlap
+    float overlap = (object1.radius + object2.radius) - distance;
+    object1.x -= overlap * normal.x * 0.5;
+    object1.y -= overlap * normal.y * 0.5;
+    object2.x += overlap * normal.x * 0.5;
+    object2.y += overlap * normal.y * 0.5;
+}
+
+
+void PhysicsEngine::handleCollisionWindow(Object& object, float windowWidth, float windowHeight, float COR) {
+    float restitution = COR; // Coefficient of restitution
+    float mass = object.mass;
+    
+    if (object.y - object.radius < 0) {
+        object.y = object.radius;
+        object.vy = -object.vy * restitution;
+    } else if (object.y + object.radius > windowHeight) {
+        object.y = windowHeight - object.radius;
+        object.vy = -object.vy * restitution;
+    }
+    
+    if (object.x - object.radius < 0) {
+        object.x = object.radius;
+        object.vx = -object.vx * restitution;
+    } else if (object.x + object.radius > windowWidth) {
+        object.x = windowWidth - object.radius;
+        object.vx = -object.vx * restitution;
     }
 }
 
-void PhysicsEngine::handleCollisionWindow(Object &object, float windowWidth, float windowHeight, float COR) {
-    float mass = object.mass;  // added mass of the object
-    if (object.y - object.radius < 0) {
-        object.y = object.radius;
-        object.vy = -object.vy * COR * mass;  // reversed the velocity in the y direction and multiplied by mass
-    } else if (object.y + object.radius > windowHeight) {
-        object.y = windowHeight - object.radius;
-        object.vy = -object.vy * COR * mass;  // reversed the velocity in the y direction and multiplied by mass
-    }
-    if (object.x - object.radius < 0) {
-        object.x = object.radius;
-        object.vx = -object.vx * COR * mass;  // reversed the velocity in the x direction and multiplied by mass
-    } else if (object.x + object.radius > windowWidth) {
-        object.x = windowWidth - object.radius;
-        object.vx = -object.vx * COR * mass;  // reversed the velocity in the x direction and multiplied by mass
-    }
-}
